@@ -11,9 +11,11 @@
   ],
   "scripts": {
     "test": "lerna run test",
-    "test-comment": "lerna run test --scope=@micro-frontend-poc/comment", 
-    "test-comment-server": "lerna run test --scope={@micro-frontend-poc/comment,@micro-frontend-poc/server}", 
+    "test-since": "lerna run test --since",
+    "test-comment": "lerna run test --scope=@idexcel-technologies-pvt-ltd/comment", 
+    "test-comment-server": "lerna run test --scope={@idexcel-technologies-pvt-ltd/comment,@idexcel-technologies-pvt-ltd/server}", 
     "new-version": "lerna version --conventional-commits --yes",
+    "new-publish": "lerna publish --conventional-commits --yes",
     "diff": "lerna diff"
   },
   "devDependencies": {

@@ -1,3 +1,3 @@
-const commentFunction = require('@micro-frontend-poc/comment');
+const commentFunction = require('@idexcel-technologies-pvt-ltd/comment');
 commentFunction();
 commentFunction();
