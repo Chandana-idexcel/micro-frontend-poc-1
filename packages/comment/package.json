@@ -3,6 +3,13 @@
   "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhanu-alapati/micro-frontend-poc.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@bhanu-alapati"
+  },
   "scripts": {
     "test": "echo testing comment with version: $npm_package_version"
   }
