@@ -12,5 +12,6 @@
   },
   "scripts": {
     "test": "echo testing comment with version: $npm_package_version"
-  }
+  },
+  "gitHead": "6158f5e2c16ef0732c57bcd6e97c1aac1a3d0d53"
 }
