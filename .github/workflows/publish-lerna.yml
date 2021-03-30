@@ -1,0 +1,32 @@
+name: lerna publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Step 1 - Checkout main branch from Github
+        uses: actions/checkout@v2
+      - name: Step 2- setup node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com/
+          scope: '@bhanu-alapati'
+      - name: Step 3 - install all the dependencies.
+        run: npm install
+      - run: | 
+          npm config set //npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}
+          npm ci
+      - name: Configure Git User
+        run: |
+          git config --global user.email "bhanu.prakash@idexcel.com"
+          git config --global user.name "@$GITHUB_ACTOR"
+      - run: npx lerna publish --conventional-commits --yes

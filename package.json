@@ -12,8 +12,8 @@
   "scripts": {
     "test": "lerna run test",
     "test-since": "lerna run test --since",
-    "test-comment": "lerna run test --scope=@idexcel-technologies-pvt-ltd/comment", 
-    "test-comment-server": "lerna run test --scope={@idexcel-technologies-pvt-ltd/comment,@idexcel-technologies-pvt-ltd/server}", 
+    "test-comment": "lerna run test --scope=@bhanu-alapati/comment", 
+    "test-comment-server": "lerna run test --scope={@bhanu-alapati/comment,@bhanu-alapati/server}", 
     "new-version": "lerna version --conventional-commits --yes",
     "new-publish": "lerna publish --conventional-commits --yes",
     "diff": "lerna diff"

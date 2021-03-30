@@ -1,3 +1,3 @@
-const commentFunction = require('@idexcel-technologies-pvt-ltd/comment');
+const commentFunction = require('@bhanu-alapati/comment');
 commentFunction();
 commentFunction();
