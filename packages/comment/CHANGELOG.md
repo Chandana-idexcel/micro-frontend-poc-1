@@ -5,7 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.0.3](https://github.com/bhanu-alapati/micro-frontend-poc/compare/v1.0.2...v1.0.3) (2021-03-30)
 
-**Note:** Version bump only for package @idexcel-technologies-pvt-ltd/comment
+**Note:** Version bump only for package @bhanu-alapati/comment
 
 
 
