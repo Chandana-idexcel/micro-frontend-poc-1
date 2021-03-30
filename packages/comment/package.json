@@ -1,0 +1,9 @@
+{
+  "name": "@micro-frontend-poc/comment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts" : {
+    "test": "echo testing comment with version: $npm_package_version"
+  }
+}
